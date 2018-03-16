@@ -1,0 +1,44 @@
+<!doctype>
+<html>
+<head>
+<style>
+body {
+background: #ccc;
+}
+
+.outer-container {
+margin: 0 auto;
+height: 1400px;
+width: 650px;
+    background: green;
+}
+
+.sidebar {
+    background-color: #ddd;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%) translateX(10%);
+
+
+}
+
+.main {
+float: right;
+    background-color: yellow;
+    width: 300px;
+    height: 1400px;
+}
+</style>
+</head>
+<body>
+<div class="outer-container">outer-container
+    <div class="sidebar">sidebar</div>
+    <div class="main">main</div>
+</div>
+</body>
+</html>
+<!-- http://jsfiddle.net/T2PL5/85/ -->
+<!--  https://stackoverflow.com/questions/6794000/fixed-position-but-relative-to-container  -->

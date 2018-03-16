@@ -1,0 +1,240 @@
+/*UI/UX Elements styles*/
+
+/* New Collapsing Navigation appropriated from CodyHouse*/
+.nav-trigger {
+	display:  block;
+	z-index:  4;
+	position:  fixed;
+	top:  5px;/*orig bottom: 30px*/
+	margin:  4px;
+	height:  44px;
+	width:  44px;
+	border-radius:  0.25em;
+	background:  rgba(255, 255, 255, 0.9);
+}
+
+.nav-trigger span {
+position:  absolute;
+height:  4px;/*orig 4px*/
+width:  4px;
+background-color: darkorange /*#3e3947*/;
+border-radius:  50%;
+left:  50%;
+top:  50%;
+bottom:  auto;
+right:  auto;
+-webkit-transform:  translateX(-50%) translateY(-50%);
+-moz-transform:  translateX(-50%) translateY(-50%);
+-ms-transform:  translateX(-50%) translateY(-50%);
+-o-transform:  translateX(-50%) translateY(-50%);
+transform:  translateX(-50%) translateY(-50%);
+}
+
+
+.nav-trigger span::before,
+.nav-trigger span::after {
+	content: '';
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	background-color:  inherit;
+	border-radius: inherit;
+}
+
+.nav-trigger span::before {
+	top:  -9px;
+	left: 0px;/*absurdly, necc for 3 dots/spans to show up in moz - not necc for webkit*/
+}
+
+.nav-trigger span::after {
+	bottom:  -9px;
+	left: 0px;/*absurdly, necc for 3 dots/spans to show up in moz - not necc for webkit*/
+}
+
+
+#collapsing-nav {
+	position: fixed;
+	z-index: 4;
+	top: 5px;/*orig bottom: 30px*/
+	margin: 4px;
+	width: 90%;
+	max-width: 400px;
+	max-height: 70%;
+	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
+	-webkit-transform-origin: left top;
+	-moz-transform-origin: left top;
+	-ms-transform-origin: left top;
+	-o-transform-origin: left top;
+	transform-origin: left top;
+	transform: scale(0);
+	-webkit-transition-property: -webkit-transform;
+	-moz-transition-property: -moz-transform;
+	transition-property: transform;
+	-webkit-transition-duration: 0.2s;
+	-moz-transition-duration: 0.2s;
+	transition-duration: 0.2s;
+	border-radius: 0.3em;/*orig .25*/
+	background-color: rgba(255, 255, 255, 0.96);
+}
+
+#collapsing-nav a {
+	display: block;
+	padding: 13px;
+	border-bottom:  1px solid rgba(62, 57, 71, 0.1);
+	text-decoration: none;
+	text-align: center;
+	color: orange;
+}
+
+#collapsing-nav a span:first-child {
+	display: none;
+}
+
+#collapsing-nav.open {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	-o-transform: scale(1);
+	transform: scale(1);
+}
+
+#collapsing-nav.open + .nav-trigger {
+	background-color: transparent;
+}
+
+#collapsing-nav.open + .nav-trigger span {
+	background-color: rgba(62, 57, 71, 0);
+}
+
+#collapsing-nav.open + .nav-trigger span::before,
+#collapsing-nav.open + .nav-trigger span::after {
+	background-color: darkorange;
+	height: 3px;
+	width: 20px;
+	border-radius: 0;
+	left: -8px;
+}
+
+#collapsing-nav.open + .nav-trigger span::before {
+	-webkit-transform: rotate(45deg);
+	-moz-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	-o-transform: rotate(45deg);
+	transform: rotate(45deg);
+	top: 1px;
+}
+
+#collapsing-nav.open + .nav-trigger span::after {
+	-webkit-transform: rotate(135deg);
+	-moz-transform: rotate(135deg);
+	-ms-transform: rotate(135deg);
+	-o-transform: rotate(135deg);
+	transform: rotate(135deg);
+	bottom: 0;
+}
+
+.img-replace {
+	/* replace text with a background-image */
+	display: inline-block;
+	overflow: hidden;
+	text-indent: 100%;
+	white-space: nowrap;
+}
+
+/*end collapsing nav styles*/
+
+/*buttons*/
+button {
+	height: 4.5em;
+	background-color: transparent;
+	display: block;
+	float: right;
+	width: 150px;
+	border-radius: 10px 10px;
+	color: red;
+	box-sizing: border-box;
+	border-style: none;
+	border: 2px solid white;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+button:hover {
+	background-color: white;
+	opacity: .8;
+	font-weight: bold!important;
+}
+
+button:focus {
+	outline: -webkit-focus-ring-color none;
+	opacity: .5;
+}
+
+button.info p {
+	font-size: 15px;
+	padding: 4px 8px;
+	background-color: #7eab40;
+	border-radius: 5px 5px;
+}
+
+
+button.commerce p {
+	padding: 4px 8px;
+	background-color: darkorange;
+	border-radius: 5px 5px;
+	font-size: 15px;
+}
+
+
+/* for laptops and bigger ------------------------------------------------------------- */
+@media only screen and (min-width:961px) {
+	.pg-down {
+	width: 35px;
+	height: 50px;
+	background-image: url(../LiquidLab-images/page-arrow-down.svg);
+	background-size: cover;
+	position: fixed;
+	bottom:  50%;
+	transform:  translateY(125%) translateX(10%);
+	z-index: 5;
+	margin: 4px;
+	transition: all .1s ease-in-out;
+	-webkit-transition: all .1s ease-in-out;
+	-moz-transition: all .1s ease-in-out;
+}
+
+	.pg-down:hover {
+		background-image: url(../LiquidLab-images/page-arrow-down.svg);
+		bottom:  49.5%;
+	}
+
+	.pg-up {
+		width: 35px;
+		height: 50px;
+		background-image: url(../LiquidLab-images/page-arrow-down.svg);
+		background-size: cover;position: fixed;
+		top: 50%;
+		transform:  translateY(-125%) translateX(10%) rotate(180deg);
+		z-index: 5;
+		margin: 4px;
+		transition: all .1s ease-in-out;
+		-webkit-transition: all .1s ease-in-out;
+		-moz-transition: all .1s ease-in-out;
+	}
+
+	.pg-up:hover {
+	background-image: url(../LiquidLab-images/page-arrow-down.svg);
+	top:  49.5%;
+	transform:  translateY(-125%) translateX(10%) rotate(180deg);
+
+	}
+
+	.offset-waypoint-marker {
+		width: 50px;
+		height: 50px;
+		background-color: red;
+		position: absolute;
+		top: -300px;
+	}
+}/*end media query*/

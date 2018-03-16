@@ -1,0 +1,149 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous">
+</script>
+
+<script src="waypoints/lib/noframework.waypoints.js"></script>
+
+
+
+<style>
+body {
+transition: 300ms ease-in-out;
+}
+
+.black {
+background-color: black;
+color: white;
+}
+
+.font-red {
+  color: red;
+}
+
+.bold {
+  font-weight: 800;
+  font-family: sans-serif;
+  color: gold;
+}
+</style>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+<p id="up">Praesent sed imperdiet enim, sed aliquam nisi. Morbi est ligula, convallis ac blandit vel, luctus at ex. Maecenas et pellentesque massa, eget consectetur enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt fringilla quam vitae dignissim. Morbi sollicitudin id libero ac ullamcorper. Nunc rutrum ultricies ex et lobortis. Integer condimentum egestas dolor sit amet rhoncus. Etiam blandit dui lacus, et venenatis orci lobortis eget. Morbi quis lacus molestie, semper lectus et, maximus nibh. Fusce mollis, quam sit amet posuere lobortis, est enim placerat lacus, nec tempor mauris turpis ut dui. Nulla facilisi.</p>
+
+<p>Cras malesuada lectus eu efficitur facilisis. Aenean libero ante, pharetra sed libero id, viverra pellentesque turpis. Integer vestibulum quam fringilla, vulputate ligula a, maximus tortor. Duis et sem ut dolor venenatis accumsan. Nulla vitae tellus velit. Aenean sed sem sed orci commodo hendrerit. Aliquam eget ipsum suscipit, venenatis odio nec, commodo mi. Suspendisse potenti. Aenean lorem neque, condimentum in lorem non, bibendum eleifend nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris lobortis augue purus, quis molestie augue lobortis a. Vestibulum et felis blandit, rutrum massa eget, laoreet elit. Etiam vel urna tortor. Cras scelerisque sit amet lacus ac ultricies. Ut nec dignissim velit.</p>
+
+<p id="basic-waypoint"><strong>Aliquam sodales</strong> ultrices orci sit amet gravida. In cursus arcu at enim lacinia, interdum malesuada erat tincidunt. Proin ultricies ultrices ipsum non luctus. Donec in arcu mi. Etiam orci ligula, pulvinar blandit gravida nec, vestibulum in dolor. Cras dignissim odio ante, vitae convallis arcu porta quis. Nam ultrices condimentum tempus. Nullam varius finibus laoreet.</p>
+
+<p>Donec varius nunc in lectus convallis, vitae tristique lorem volutpat. Nulla eu quam et lorem aliquam vestibulum nec tempor sapien. Donec ultricies erat gravida, laoreet mi consectetur, dictum nunc. Morbi varius enim sit amet erat varius suscipit. Sed ullamcorper tincidunt lorem, auctor faucibus ex scelerisque ut. Curabitur facilisis arcu eget dictum molestie. Sed metus velit, lacinia in iaculis vitae, facilisis vitae sapien. Phasellus ut molestie sem, quis tincidunt sem. Fusce a nisl sit amet lectus auctor eleifend. Sed nec lorem consectetur, auctor nisi quis, tincidunt nulla. Suspendisse eu velit et ipsum placerat egestas eget in tortor. Etiam convallis in leo eu facilisis. Nam at mollis nunc, at dictum tellus. Donec tellus nunc, varius non mi et, vestibulum luctus est. Phasellus consequat sodales orci at rutrum. In vestibulum arcu in porta rhoncus.</p>
+
+<p>Praesent sed imperdiet enim, sed aliquam nisi. Morbi est ligula, convallis ac blandit vel, luctus at ex. Maecenas et pellentesque massa, eget consectetur enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt fringilla quam vitae dignissim. Morbi sollicitudin id libero ac ullamcorper. Nunc rutrum ultricies ex et lobortis. Integer condimentum egestas dolor sit amet rhoncus. Etiam blandit dui lacus, et venenatis orci lobortis eget. Morbi quis lacus molestie, semper lectus et, maximus nibh. Fusce mollis, quam sit amet posuere lobortis, est enim placerat lacus, nec tempor mauris turpis ut dui. Nulla facilisi.</p>
+
+<p ><strong>Cras</strong> malesuada lectus eu efficitur facilisis. Aenean libero ante, pharetra sed libero id, viverra pellentesque turpis. Integer vestibulum quam fringilla, vulputate ligula a, maximus tortor. <a id="direction-waypoint" class="changer" href="#">Duis</a> et sem ut dolor venenatis accumsan. Nulla vitae tellus velit. Aenean sed sem sed orci commodo hendrerit. Aliquam eget ipsum suscipit, venenatis odio nec, commodo mi. Suspendisse potenti. Aenean lorem neque, condimentum in lorem non, bibendum eleifend nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris lobortis augue purus, quis molestie augue lobortis a. Vestibulum et felis blandit, rutrum massa eget, laoreet elit. Etiam vel urna tortor. Cras scelerisque sit amet lacus ac ultricies. Ut nec dignissim velit.</p>
+
+<p>Aliquam sodales ultrices orci sit amet gravida. In cursus arcu at enim lacinia, interdum malesuada erat tincidunt. Proin ultricies ultrices ipsum non luctus. Donec in arcu mi. Etiam orci ligula, pulvinar blandit gravida nec, vestibulum in dolor. Cras dignissim odio ante, vitae convallis arcu porta quis. Nam ultrices condimentum tempus. Nullam varius finibus laoreet.</p>
+
+<p>Donec varius nunc in lectus convallis, vitae tristique lorem volutpat. Nulla eu quam et lorem aliquam vestibulum nec tempor sapien. Donec ultricies erat gravida, laoreet mi consectetur, dictum nunc. Morbi varius enim sit amet erat varius suscipit. Sed ullamcorper tincidunt lorem, auctor faucibus ex scelerisque ut. Curabitur facilisis arcu eget dictum molestie. Sed metus velit, lacinia in iaculis vitae, facilisis vitae sapien. Phasellus ut molestie sem, quis tincidunt sem. Fusce a nisl sit amet lectus auctor eleifend. Sed nec lorem consectetur, auctor nisi quis, tincidunt nulla. Suspendisse eu velit et ipsum placerat egestas eget in tortor. Etiam convallis in leo eu facilisis. Nam at mollis nunc, at dictum tellus. Donec tellus nunc, varius non mi et, vestibulum luctus est. Phasellus consequat sodales orci at rutrum. In vestibulum arcu in porta rhoncus.</p>
+
+<p>Praesent sed imperdiet enim, sed aliquam nisi. Morbi est ligula, convallis ac blandit vel, luctus at ex. Maecenas et pellentesque massa, eget consectetur enim. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Integer tincidunt fringilla quam vitae dignissim. Morbi sollicitudin id libero ac ullamcorper. Nunc rutrum ultricies ex et lobortis. Integer condimentum egestas dolor sit amet rhoncus. Etiam blandit dui lacus, et venenatis orci lobortis eget. Morbi quis lacus molestie, semper lectus et, maximus nibh. Fusce mollis, quam sit amet posuere lobortis, est enim placerat lacus, nec tempor mauris turpis ut dui. Nulla facilisi.</p>
+
+<p>Cras malesuada lectus eu efficitur facilisis. Aenean libero ante, pharetra sed libero id, viverra pellentesque turpis. Integer vestibulum quam fringilla, vulputate ligula a, maximus tortor. Duis et sem ut dolor venenatis accumsan. Nulla vitae tellus velit. Aenean sed sem sed orci commodo hendrerit. Aliquam eget ipsum suscipit, venenatis odio nec, commodo mi. Suspendisse potenti. Aenean lorem neque, condimentum in lorem non, bibendum eleifend nunc. Interdum et malesuada fames ac ante ipsum primis in faucibus. Mauris lobortis augue purus, quis molestie augue lobortis a. Vestibulum et felis blandit, rutrum massa eget, laoreet elit. Etiam vel urna tortor. Cras scelerisque sit amet lacus ac ultricies. Ut nec dignissim velit.</p>
+
+<p>Aliquam sodales ultrices orci sit amet gravida. In cursus arcu at enim lacinia, interdum malesuada erat tincidunt. Proin ultricies ultrices ipsum non luctus. Donec in arcu mi. Etiam orci ligula, pulvinar blandit gravida nec, vestibulum in dolor. Cras dignissim odio ante, vitae convallis arcu porta quis. Nam ultrices condimentum tempus. Nullam varius finibus laoreet.</p>
+
+<p id="down">Donec varius nunc in lectus convallis, vitae tristique lorem volutpat. Nulla eu quam et lorem aliquam vestibulum nec tempor sapien. Donec ultricies erat gravida, laoreet mi consectetur, dictum nunc. Morbi varius enim sit amet erat varius suscipit. Sed ullamcorper tincidunt lorem, auctor faucibus ex scelerisque ut. Curabitur facilisis arcu eget dictum molestie. Sed metus velit, lacinia in iaculis vitae, facilisis vitae sapien. Phasellus ut molestie sem, quis tincidunt sem. Fusce a nisl sit amet lectus auctor eleifend. Sed nec lorem consectetur, auctor nisi quis, tincidunt nulla. Suspendisse eu velit et ipsum placerat egestas eget in tortor. Etiam convallis in leo eu facilisis. Nam at mollis nunc, at dictum tellus. Donec tellus nunc, varius non mi et, vestibulum luctus est. Phasellus consequat sodales orci at rutrum. In vestibulum arcu in porta rhoncus.</p>
+</body>
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links
+  $("a").on('click', function(event) {
+
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 800, function(){
+
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+});
+
+
+$(window).scroll(function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 350;
+	// set to whatever you want it to be
+
+    if(y_scroll_pos > scroll_pos_test) {
+	   $("body").addClass("black");
+    }
+	else
+	{
+		$("body").removeClass("black");
+	}
+
+
+
+
+});
+
+//waypoint
+var waypoint = new Waypoint({
+  element: document.getElementById('basic-waypoint'),
+  handler: function() {
+    changeFontRed();
+  }
+})
+function changeFontRed() {
+  $("body").toggleClass("font-red");
+}
+
+function boldText() {
+  $("body").addClass("bold");
+}
+
+function unboldText() {
+  $("body").removeClass("bold");
+}
+
+var waypoint = new Waypoint({
+  element: document.getElementById('direction-waypoint'),
+  handler: function(direction) {
+
+    if (direction == "up") {
+      unboldText();
+      $('a.changer').attr("href","#up")
+    }
+    else if (direction == "down") {
+
+      boldText();
+      $('a.changer').attr("href","#down")
+    }
+  }
+})
+
+
+</script>
+
+
+
+</html>

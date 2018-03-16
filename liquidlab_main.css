@@ -1,0 +1,411 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*typography styles*/
+
+p  {
+	color: white;
+	font-family:  'Lato', 'Helvetica', sans-serif;
+	font-weight: 400;
+	line-height: 1.5em;
+	font-size: .9em;
+}
+/*
+font-family:  'Abril Fatface', cursive;
+font-family:  'Alice', serif;
+font-family:  'Poiret One', cursive;
+*/
+
+h1 {
+	width: 95%;
+	font-family:  'Alice', serif;
+	color: white;
+	line-height: 2em;
+	font-size: 1.5em;
+}
+
+h2, blockquote {
+	width: 100%;
+	font-family:  'Alice', serif;
+	color: white;
+	line-height: 2em;
+	font-size: 1.2em;
+}
+
+
+h1.title {
+	color: white;
+	font-family:  'Poiret One', serif;
+	line-height: 1.5em;
+	font-weight: 300;
+	text-align: center;
+	font-size: 4em;
+	position: absolute;
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+	transform: translateX(-50%) translateY(-70%);
+	-webkit-transform: translateX(-50%) translateY(-70%);
+	-moz-transform: translateX(-50%) translateY(-70%);
+}
+
+h2.center,
+h1.center {
+	position: absolute;
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+	transform: translateX(-50%) translateY(-50%);
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	text-align: center;
+}
+
+p.drop-cap: first-letter {
+	font-size: 3.1em;
+	font-weight: bold;
+	float: left;
+	line-height: .9em!important;
+	padding-right: .1em;
+	font-family:  'Alice', serif;
+	color: darkorange;
+}
+
+h2.icon-header {
+	text-align: center;
+}
+
+
+/*Layout styles*/
+#map-canvas {
+	height: 90%;
+}
+
+html,
+body,
+main {
+	height: 100%;
+	font-smoothing: antialiased;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	width:  100%;
+	max-width: 1280px;
+	position:  relative;
+	display:  block;
+	margin-left:  auto;
+	margin-right:  auto;
+}
+
+.hero-page {
+	height: 100%;
+	background-attachment: fixed;
+}
+
+.underlay {
+	height: 200px;
+	width: 200px;
+	border-radius: 50%;
+	background-color: darkorange;
+	/*opacity: .7;*/
+	position: absolute;
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+	-webkit-transform:  translateX(-50%) translateY(-50%);
+	-moz-transform:  translateX(-50%) translateY(-50%);
+	transform:  translateX(-50%) translateY(-50%);
+	opacity: 0;
+	transition: all 3s ease-in;
+}
+
+#circle-ray {
+	position:  absolute;
+	top:  50%;
+	left:  50%;
+	width:  320px;
+	height:  320px;
+	margin: -160px 0 0 -160px;
+	transition: all 2s linear;
+	opacity: 0.3;
+}
+
+.show {
+	opacity: .7;
+}
+
+.scroll-bkg {
+	background-attachment: scroll;
+	position: relative;
+	height: 650px;
+	width: 100%;
+	box-shadow: 0px 0px 25px rgba(17, 17, 17, .5);
+	z-index: 2;
+}
+
+.fixed-bkg {
+	background-attachment: fixed;
+	position: relative;/*need positioning if you're giving children (h1, p, divs)
+	positioning as well*/
+}
+
+.quarter-grid-1-sm {
+	width: 100%;
+	height: 25%;
+	float: left;
+	position: relative;
+}
+
+.quarter-grid-2-sm {
+	width: 50%;
+	height: 25%;
+	float: left;
+	position: relative;
+}
+
+.quarter-grid-3-sm {
+	width: 100%;
+	height: 50.1%;/*seems to fix gap-glitch*/
+	float: left;
+	position: relative;
+}
+
+.half-grid {
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+
+.whole-grid-sm-long {
+	width: 100%;
+	height: 1700px;
+}
+
+.whole-grid-sm-short {
+	width: 100%;
+	height: 100%;
+}
+
+.content-quarter-grid {
+	position: absolute;
+	width: 90%;
+	-webkit-transform:  translateX(-50%) translateY(-50%);
+	-moz-transform:  translateX(-50%) translateY(-50%);
+	transform:  translateX(-50%) translateY(-50%);
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+}
+
+.content-whole-grid {
+	position: absolute;
+	width: 90%;
+
+	-webkit-transform:  translateX(-50%) translateY(-50%);
+	-moz-transform:  translateX(-50%) translateY(-50%);
+	transform:  translateX(-50%) translateY(-50%);
+
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+}
+
+.content-half-grid {
+	position: absolute;
+	width: 90%;
+	max-width: 480px;
+
+	-webkit-transform:  translateX(-50%) translateY(-50%);
+	-moz-transform:  translateX(-50%) translateY(-50%);
+	transform:  translateX(-50%) translateY(-50%);
+
+	top: 50%;
+	bottom: auto;
+	left: 50%;
+	right: auto;
+}
+
+.col-3 {
+	float: left;
+	width: 100%;
+	padding: 3% 2% 1% 2%;
+	box-sizing: border-box;
+}
+
+img.icon {
+	width: 65%;
+	border-radius: 50%;
+	margin: 5px  auto 10px auto;
+	display: block!important;
+	box-shadow:  0px 0px 25px rgba(17, 17, 17, .5);
+}
+
+
+
+
+
+
+
+/*for lg-phones and mid-size phones -----------------------------------------------------*/
+@media only screen and (min-width:400px){
+/*Layout styles*/
+	.whole-grid-sm-long {
+		width: 100%;
+		height: 1700px;
+	}
+
+	.bkg-1 {
+		background-size: 180px;
+	}
+
+}
+
+/*for tablets and largest phones ------------------------------------------------------*/
+@media only screen and (min-width:568px) {
+/*Typography styles*/
+	h1 {
+		font-size: 1.8em;
+	}
+
+	/*Layout styles*/
+	.scroll-bkg {
+		height: 750px;
+	}
+
+	.fixed-bkg {
+	/*height: 100%;
+	width: 100%;*/
+	}
+
+	.quarter-grid-1-sm {
+		height: 200px;
+	}
+
+	.quarter-grid-2-sm {
+		height: 250px;
+	}
+
+	.quarter-grid-3-sm {
+		height: 300px;
+	}
+
+	.half-grid {
+		height: 100%;
+		width: 100%;
+		position: relative;
+	}
+
+	.whole-grid-sm-long {
+		width: 100%;
+		height: 1700px;
+	}
+
+	img.icon {
+		width: 250px;
+	}
+}
+
+/* for laptops and bigger ------------------------------------------------------------- */
+@media only screen and (min-width:961px) {
+	#map-canvas {height: 100%;}
+
+/*Typography styles*/
+	p  {
+		font-size: 1em;
+	}
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	p.link-desc {
+		text-align: right;
+	}
+
+	.blockquote-initials {
+		text-align: right;
+	}
+
+	.underlay {
+		height: 400px;
+		width: 400px;
+	}
+
+	/*Layout styles*/
+	.fixed-bkg {
+		height: 100%;
+		width: 100%;
+	}
+
+	.scroll-bkg {
+		height: 100%;
+	}
+
+	.content-quarter-grid {
+		width: 85%;
+		max-width: 480px;
+	}
+
+	.content-whole-grid {
+		width: 85%;
+		max-width: 980px;
+	}
+
+	.content-half-grid {
+		width: 85%;
+	}
+
+	.quarter-grid {
+		width: 50%;
+		height: 50%;
+		float: left;
+		position: relative;
+	}
+
+	.half-grid {
+		height: 100%;
+		width: 50%;
+		float: left;
+		position: relative;
+	}
+
+	.col-3 {
+		float: left;
+		width: 33.3%;
+		padding: 3% 2% 1% 2%;
+		box-sizing: border-box;
+	}
+
+	.row:after {
+		display: block!important;
+		clear: both;
+		content: ".";
+	}
+
+	img.icon {
+		width: 75%;
+	}
+
+	#circle-ray {
+		position:  absolute;
+		top:  50%;
+		left:  50%;
+		width:  600px;
+		height:  600px;
+		margin: -300px 0 0 -300px;
+		transition: all 2s linear;
+		opacity: 0.3;
+	}
+}
+
+@media only screen and (min-width:1281px) {
+	h1 {
+		font-size: 2em;
+	}
+}
