@@ -202,6 +202,7 @@ button.commerce p {
 		transition: all .1s ease-in-out;
 		-webkit-transition: all .1s ease-in-out;
 		-moz-transition: all .1s ease-in-out;
+		z-index: 10000;
 }
 
 	.pg-down:hover {
@@ -221,6 +222,7 @@ button.commerce p {
 		transition: all .1s ease-in-out;
 		-webkit-transition: all .1s ease-in-out;
 		-moz-transition: all .1s ease-in-out;
+		z-index: 10000;
 	}
 
 	.pg-up:hover {
@@ -236,5 +238,6 @@ button.commerce p {
 		background-color: red;
 		position: absolute;
 		top: -300px;
+		z-index: 1000;
 	}
 }/*end media query*/
