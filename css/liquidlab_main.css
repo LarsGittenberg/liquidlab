@@ -63,7 +63,7 @@ h1.center {
 	text-align: center;
 }
 
-p.drop-cap: first-letter {
+p.drop-cap:first-letter {
 	font-size: 3.1em;
 	font-weight: bold;
 	float: left;
