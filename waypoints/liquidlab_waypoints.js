@@ -12,16 +12,16 @@ for (var i=0; i<markers.length; i++ ) {
         new Waypoint({
           element: marker,
           handler: function(direction) {
-              var page;
               console.log(marker.id + '-' + direction + ' array index ' + i);
-              function updateNav(page) {
+
+              function updateNav() {
+                  var page;
                   if (direction == "down") {
                     page = i+1;
-                  }
-
-                  else {
-                      page = i;
-                  }
+                  } else {
+                    page = i;
+                  }//you could make above if/else statement DRYer by using ternary/conditional operator syntax
+                  //eg (direction == "down") ? i+1 : i;
 
                   // does markers[page] exist?
                   if (markers[page]) {
