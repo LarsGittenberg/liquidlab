@@ -229,15 +229,17 @@ button.commerce p {
 		background-image: url(../optimized-liquidLab-images/page-arrow-down.svg);
 		top:  49.5%;
 		transform:  translateY(-125%) translateX(10%) rotate(180deg);
-
 	}
 
-	.offset-waypoint-marker {
+	.offset-marker {
 		width: 50px;
 		height: 50px;
 		background-color: red;
-		position: absolute;
 		top: -300px;
-		z-index: 1000;
+		position: absolute;
+		z-index: 100;
 	}
+
+
+
 }/*end media query*/

@@ -24,20 +24,19 @@
 
     <nav id="collapsing-nav">
         <ul>
-        <li><a class="local" href="#page-2"><span></span>Home</a></li>
-        <li><a class="local" href="#page-3"><span></span>Custom Plans</a></li>
-        <li><a class="local" href="#page-5"><span></span>Samplers</a></li>
-        <li><a class="local" href="#page-7"><span></span>Blog</a></li>
-        <li><a class="local" href="#page-8"><span></span>About Us</a></li>
+        <li><a class="local" href="#page-1"><span></span>Home</a></li>
+        <li><a class="local" href="#page-2"><span></span>Custom Plans</a></li>
+        <li><a class="local" href="#page-4"><span></span>Samplers</a></li>
+        <li><a class="local" href="#page-6"><span></span>Blog</a></li>
+        <li><a class="local" href="#page-7"><span></span>About Us</a></li>
         <li><a  href="LiquidLab-SlideDeck.html"><span></span>Design Process</a></li>
         </ul>
     </nav>
 
 	<div class="nav-trigger img-replace">Open navigation<span></span></div>
 
-<!--page 1 ----------------------------------------------------------------------------- -->
-    <div class="hero-page bkg-17" id="page-1">
-        <div class="offset-waypoint-marker" id="offset-page-1"></div>
+<!--page 0 ----------------------------------------------------------------------------- -->
+    <div class="hero-page bkg-17 waypoint" id="page-0">
         <a  class="local" id="down"><div class="pg-down"></div></a>
         <a class="local" id="up"><div class="pg-up"></div></a>
         <img id="circle-ray" src="optimized-liquidlab-images/circle-ray-04.svg" alt="ring of dots around title"/>
@@ -45,9 +44,8 @@
         <h1 class="title" >LiquidLab</h1><h2 class="center"><br><br>Organic Custom Juices</h2>
     </div>
 
-<!--page 2 ----------------------------------------------------------------------------- -->
-    <div class="scroll-bkg" id="page-2">
-        <div class="offset-waypoint-marker" id="offset-page-2"></div>
+<!--page 1 ----------------------------------------------------------------------------- -->
+    <div class="scroll-bkg waypoint" id="page-1">
         <div class="quarter-grid quarter-grid-1-sm   bkg-4">
             <h1  class="center">Better Nutrition. Better Life. <br>Tailored for You. </h1>
         </div>
@@ -70,10 +68,9 @@
 
      </div>
 
-<!--page 3 ----------------------------------------------------------------------------- -->
+<!--page 2 ----------------------------------------------------------------------------- -->
 
-    <div class="fixed-bkg whole-grid-sm-long  bkg-8" id="page-3">
-        <div class="offset-waypoint-marker" id="offset-page-3"></div>
+    <div class="fixed-bkg whole-grid-sm-long  bkg-8 waypoint" id="page-2">
         <div class="content-whole-grid">
             <h1>High-quality. Fresh ingredients. Custom-selected.</h1>
             <br>
@@ -106,12 +103,9 @@
         </div>
     </div>
 
-<!--page 4 ----------------------------------------------------------------------------- -->
+<!--page 3 ----------------------------------------------------------------------------- -->
 
-    <div class="fixed-bkg whole-grid-sm-short bkg-2" id ="page-4">
-        <div class="offset-waypoint-marker" id="offset-page-4"></div>
-
-
+    <div class="fixed-bkg whole-grid-sm-short bkg-2 waypoint" id="page-3">
 
         <div class="half-grid">
             <div class="content-half-grid">
@@ -127,9 +121,8 @@
 
     </div>
 
-<!--page 5 ----------------------------------------------------------------------------- -->
-    <div class="fixed-bkg whole-grid-sm-long  bkg-18" id="page-5">
-        <div class="offset-waypoint-marker" id="offset-page-5"></div>
+<!--page 4 ----------------------------------------------------------------------------- -->
+    <div class="fixed-bkg whole-grid-sm-long  bkg-18 waypoint" id="page-4">
         <div class="content-whole-grid">
             <h1>Jump-start a healthy you with LiquidLab.</h1>
 
@@ -163,10 +156,8 @@
         </div>
     </div>
 
-<!--page 6 ----------------------------------------------------------------------------- -->
-<div class="scroll-bkg " id ="page-6">
-        <div class="offset-waypoint-marker" id="offset-page-6"></div>
-
+<!--page 5 ----------------------------------------------------------------------------- -->
+	<div class="scroll-bkg waypoint" id="page-5">
         <div class="quarter-grid quarter-grid-1-sm  bkg-1">
                 <h1 class="center">Green Juice. Produced Greenly.</h1>
         </div>
@@ -189,10 +180,8 @@
         </div>
 
      </div>
-<!--page 7------------------------------------- -->
-    <div class="fixed-bkg whole-grid-sm-short  bkg-11" id ="page-7">
-        <div class="offset-waypoint-marker" id="offset-page-7"></div>
-
+<!--page 6 ------------------------------------- -->
+    <div class="fixed-bkg whole-grid-sm-short  bkg-11 waypoint" id="page-6">
 
         <div class="half-grid">
             <div class="content-half-grid">
@@ -210,14 +199,9 @@
     </div>
 
 
-<!--page 8 ----------------------------------------------------------------------------- -->
-    <div class=" scroll-bkg " id ="page-8"><!--removed class whole-grid-sm-short  -->
-        <div class="offset-waypoint-marker" id="offset-page-8"></div>
-
-
-
+<!--page 7 ----------------------------------------------------------------------------- -->
+    <div class=" scroll-bkg  waypoint" id="page-7"><!--removed class whole-grid-sm-short  -->
         <div class="half-grid bkg-17">
-
             <div class="content-half-grid ">
                 <h1>About Us</h1>
                 <p class="drop-cap">LiquidLab was founded in 2014 by three close friends who wanted to help others improve their lifestyle and incorporate more fresh fruit and veggies into their diets.</p>
@@ -229,9 +213,7 @@
                 <p>Tel:123-456-7890</p>
             </div>
         </div>
-
 		<div class="half-grid" id="map-canvas"></div>
-
     </div>
 
 
@@ -291,16 +273,11 @@ src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qQ4JxBYjmS2vKoJRnZYq_Hh
     </script>
 
 <!--  ********JS waypoints *********************** -->
-<script src="waypoints/liquidlab_waypoints_offset300.js"></script>
+<script src="waypoints/liquidlab_waypoints.js"></script>
 
 <!--  ********JS page functions *********************** -->
 <script>
 $(document).ready(function($) {
-//rotating rays on hero page $(".square").addClass("show-turn")
-
-//giving the up/down droplet button an attribute on load
-	$("a#down").attr("href", "#page-2");
-	$("a#up").attr("href", "#page-1");
 
 //code for smooth scrolling to an href on the same page
 	$('a.local').click(function(){
