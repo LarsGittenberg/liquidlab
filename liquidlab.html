@@ -29,7 +29,7 @@
         <li><a class="local" href="#page-4"><span></span>Samplers</a></li>
         <li><a class="local" href="#page-6"><span></span>Blog</a></li>
         <li><a class="local" href="#page-7"><span></span>About Us</a></li>
-        <li><a  href="LiquidLab-SlideDeck.html"><span></span>Design Process</a></li>
+        <li><a  href="http://www.lawrencegetubig.com/GeneralAssemblyProject/LiquidLab-SlideDeck.html"><span></span>Design Process</a></li>
         </ul>
     </nav>
 
@@ -39,8 +39,8 @@
     <div class="hero-page bkg-17 waypoint" id="page-0">
         <a  class="local" id="down"><div class="pg-down"></div></a>
         <a class="local" id="up"><div class="pg-up"></div></a>
-        <img id="circle-ray" src="optimized-liquidlab-images/circle-ray-04.svg" alt="ring of dots around title"/>
-        <a class="local" href="#page-2"><div id="circle-underlay" class="underlay"></div></a>
+        <img id="circle-ray" src="liquidlab_images/circle-ray-04.svg" alt="ring of dots around title"/>
+        <a  href="#page-2"><div id="circle-underlay" class="underlay"></div></a>
         <h1 class="title" >LiquidLab</h1><h2 class="center"><br><br>Organic Custom Juices</h2>
     </div>
 
@@ -79,19 +79,19 @@
             <div class="row">
                 <div class="col-3">
                     <h2 class="icon-header">Step 1</h2>
-                    <img class="icon" src="optimized-liquidlab-images/clock-02.png" alt="graphic of a round clock">
+                    <img class="icon" src="liquidlab_images/clock-02.png" alt="graphic of a round clock">
                     <p>Long hours? Marathon training? Tell us how you currently live.</p>
                 </div>
 
                 <div class="col-3">
                     <h2 class="icon-header">Step 2</h2>
-                    <img class="icon" src="optimized-liquidlab-images/goals-02.png" alt="graphic of a map leading from point A to B">
+                    <img class="icon" src="liquidlab_images/goals-02.png" alt="graphic of a map leading from point A to B">
                     <p> Where will you go with LiquidLab? Share your nutritional goals with us!</p>
                 </div>
 
                 <div class="col-3">
                     <h2 class="icon-header">Step 3</h2>
-                    <img class="icon" src="optimized-liquidlab-images/plate-01.png" alt="graphic of a plate with spoon and fork">
+                    <img class="icon" src="liquidlab_images/plate-01.png" alt="graphic of a plate with spoon and fork">
                     <p>Let us know about your current diet and favorite flavors.</p>
                 </div>
             </div><!--endrow-->
@@ -129,7 +129,7 @@
             <div class="row">
                 <div class="col-3">
                     <h2 class="icon-header">The Sweet Tooth</h2>
-                    <img class="icon" src="optimized-liquidlab-images/purple.jpg" alt="bottle of beet juice sampler">
+                    <img class="icon" src="liquidlab_images/purple.jpg" alt="bottle of beet juice sampler">
                     <p>If your motto is “eat dessert first,” this plan will have you saying “drink juice first.” The Sweet Tooth Sampler includes three of our healthy, delicious fruit smoothie blends: Mixed Berry, Strawberry-Banana and Blueberry Cobbler, together in one sampler.</p>
                     <br>
                     <button class="commerce" type="button"><p>Shop Now</p></button>
@@ -137,7 +137,7 @@
 
                 <div class="col-3">
                     <h2 class="icon-header">No Time For Salad</h2>
-                    <img class="icon" src="optimized-liquidlab-images/green.jpg" alt="bottle of vegtable juice sampler">
+                    <img class="icon" src="liquidlab_images/green.jpg" alt="bottle of vegtable juice sampler">
                     <p>All the benefits of eating a salad, but in a delicious juice blend you can grab and drink on the go. This sampler includes three vegetable blends rich in dark leafy greens like kale, spinach and swiss chard. And best of all, there are no dishes to wash when you’re done!</p>
                     <br>
                     <button class="commerce" type="button"><p>Shop Now</p></button>
@@ -145,7 +145,7 @@
 
                 <div class="col-3">
                     <h2 class="icon-header"> Defense Shield</h2>
-                    <img class="icon" src="optimized-liquidlab-images/orange.jpg" alt="bottle of carrot ginger juice sampler">
+                    <img class="icon" src="liquidlab_images/orange.jpg" alt="bottle of carrot ginger juice sampler">
                     <p>Ride the subway? Protect yourself from airborne illness by boosting your immune system with antioxidants. This sampler includes three blends that will help your body put up its best defense: our Beet Blast, Carrot Ginger and Dark Chocolate Coffee.</p>
                     <br>
                     <button class="commerce" type="button"><p>Shop Now</p></button>
@@ -220,63 +220,64 @@
 </body>
 
 <!-- JS for using Google Maps API-------------------------------------------------------------- -->
-<script type="text/javascript"
+<script type="application/javascript"
 src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA4qQ4JxBYjmS2vKoJRnZYq_Hhin6rRlHM">
 </script>
 
-    <script type="text/javascript">
-	'use strict';
+<script type="text/javascript">
+'use strict';
 
-	  document.addEventListener('DOMContentLoaded', makeMap);
+  document.addEventListener('DOMContentLoaded', makeMap);
 
-      function makeMap() {
-        var mapOptions = {
-          center: { lat: 38.905141, lng: -77.034065},
-          zoom: 16,
-		  draggable:true,
-          scrollwheel: false,
-        };
-        var map = new google.maps.Map(document.getElementById('map-canvas'),
-            mapOptions);
+  function makeMap() {
+    var mapOptions = {
+      center: { lat: 38.905141, lng: -77.034065},
+      zoom: 16,
+	  draggable:true,
+      scrollwheel: false,
+    };
+    var map = new google.maps.Map(document.getElementById('map-canvas'),
+        mapOptions);
 
-        var image = "optimized-liquidlab-images/page-arrow-down.png";
+    var image = "liquidlab_images/page-arrow-down.png";
 
-		var marker = new google.maps.Marker({
-		position: mapOptions.center,
-		map: map,
-		icon:image,
-		title: 'LiquidLab aka General Assembly DC',
-		});
+	var marker = new google.maps.Marker({
+	position: mapOptions.center,
+	map: map,
+	icon:image,
+	title: 'LiquidLab aka General Assembly DC',
+	});
 
-	  var contentString = '<div id="content">'+
-		  '<div id="siteNotice">'+
-		  '</div>'+
-		  '<div id="bodyContent">'+
-		  '<p style="color:black;"><b>LiquidLab:</b> a GA Visual Design Final Project, Spring 2015</p>'+
-		  '<p style="color:black;"><b>by</b> Lawrence Getubig </p>'+
-		  '<p style="color:black;"><b>Instructor:</b> C. Magner and TAs K. Molloy and K. Dela Cruz</p>'+
-		  '<p style="color:orange;"><b>LiquidLab fictional address:</b> (aka General Assembly-DC)</p>'+
-		  '<p style="color:orange;">1133 15th Street NW, Washington, DC‎ ‎</p>'+
-		  '</div>'+
-		  '</div>';
+  var contentString = '<div id="content">'+
+	  '<div id="siteNotice">'+
+	  '</div>'+
+	  '<div id="bodyContent">'+
+	  '<p style="color:black;"><b>LiquidLab:</b> a GA Visual Design Final Project, Spring 2015</p>'+
+	  '<p style="color:black;"><b>by</b> Lawrence Getubig </p>'+
+	  '<p style="color:black;"><b>Instructor:</b> C. Magner and TAs K. Molloy and K. Dela Cruz</p>'+
+	  '<p style="color:orange;"><b>LiquidLab fictional address:</b> (aka General Assembly-DC)</p>'+
+	  '<p style="color:orange;">1133 15th Street NW, Washington, DC‎ ‎</p>'+
+	  '</div>'+
+	  '</div>';
 
-		var infowindow = new google.maps.InfoWindow({
-			content: contentString
-		});
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString
+	});
 
-		google.maps.event.addListener(marker, 'click', function() {
-			infowindow.open(map,marker);
-		});
+	google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map,marker);
+	});
 
 
-		}
-    </script>
+	}
+</script>
 
 <!--  ********JS waypoints *********************** -->
-/* js code to update up/down buttons using waypoints framework
+<!-- js code to update up/down buttons using waypoints framework
 http://imakewebthings.com/waypoints/guides/getting-started/
-*/
+-->
 <script src="waypoints/liquidlab_waypoints.js"></script>
+
 
 <!--  ********JS page functions *********************** -->
 <script>

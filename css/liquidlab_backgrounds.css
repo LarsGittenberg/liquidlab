@@ -1,31 +1,31 @@
 /* LiquidLab Pattern BACKGROUNDS-----------------BACKGROUNDS-------------------*/
 .bkg-1 {
-	background-image: url(../optimized-liquidLab-images/optimized-inca-8.jpg);
+	background-image: url(../liquidlab_images/optimized-inca-8.jpg);
 	background-repeat: repeat;
 	background-size: 128px;
 }
 
 .bkg-2 {
-	background-image: url(../optimized-liquidLab-images/optimized-rukenfigur-phone.jpg);
+	background-image: url(../liquidlab_images/optimized-rukenfigur-phone.jpg);
 	background-size: cover;
 	background-repeat: no-repeat;
 }
 
 .bkg-4 {
-	background-image: url(../optimized-liquidLab-images/optimized-mega-tile-v3-07.jpg);
+	background-image: url(../liquidlab_images/optimized-mega-tile-v3-07.jpg);
 	background-repeat: repeat;
 	background-attachment: scroll;
 	background-size: 128px;
 }
 
 .bkg-7 {
-	background-image: url(../optimized-liquidLab-images/optimized-sonja-langford.jpg);
+	background-image: url(../liquidlab_images/optimized-sonja-langford.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .bkg-8 {
-	background-image: url(../optimized-liquidLab-images/optimized-southwest-pattern-10.jpg);
+	background-image: url(../liquidlab_images/optimized-southwest-pattern-10.jpg);
 	background-repeat: repeat;
 	background-size: 256px;
 	/*height: 100%;
@@ -33,26 +33,26 @@
 }
 
 .bkg-9 {
-	background-image: url(../optimized-liquidLab-images/optimized-maja-petric-phone.jpg);
+	background-image: url(../liquidlab_images/optimized-maja-petric-phone.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .bkg-11 {
-	background-image: url(../optimized-liquidLab-images/optimized-todd-quackenbush-phone.jpg);
+	background-image: url(../liquidlab_images/optimized-todd-quackenbush-phone.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
 
 .bkg-12 {
-	background-image: url(../optimized-liquidLab-images/optimized-apples-phone.jpg);
+	background-image: url(../liquidlab_images/optimized-apples-phone.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: scroll;
 }
 
 .bkg-13 {
-	background-image: url(../optimized-liquidLab-images/optimized-mega-tile-v3-04.jpg);
+	background-image: url(../liquidlab_images/optimized-mega-tile-v3-04.jpg);
 	background-attachment: scroll;
 	background-size: 320px;
 	width: 100%;
@@ -60,7 +60,7 @@
 }
 
 .bkg-14 {
-	background-image: url(../optimized-liquidLab-images/optimized-farmer-phone.jpg);
+	background-image: url(../liquidlab_images/optimized-farmer-phone.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
 }
@@ -70,7 +70,7 @@
 }
 
 .bkg-17 {
-	background-image: url(../optimized-liquidLab-images/optimized-southwest-pattern-10.jpg);
+	background-image: url(../liquidlab_images/optimized-southwest-pattern-10.jpg);
 	background-repeat: repeat;
 	background-size: 200px;
 	/*height: 100%;
@@ -78,7 +78,7 @@
 }
 
 .bkg-18 {
-	background-image: url(../optimized-liquidLab-images/optimized-southwest-pattern-11.jpg);
+	background-image: url(../liquidlab_images/optimized-southwest-pattern-11.jpg);
 	background-repeat: repeat;
 	background-size: 400px;
 }
@@ -91,7 +91,7 @@
 @media only screen and (min-width:568px) {
 /*background styles*/
 	.bkg-2 {
-		background-image: url(../optimized-liquidLab-images/rukenfigur.jpg);
+		background-image: url(../liquidlab_images/rukenfigur.jpg);
 	}
 }
 
@@ -99,7 +99,7 @@
 @media only screen and (min-width:961px) {
 /*Background styles*/
 	html {
-		background-image: url(../optimized-liquidLab-images/gray_droplet.png);
+		background-image: url(../liquidlab_images/gray_droplet.png);
 		background-repeat: repeat;
 		background-size: 13px;
 		background-attachment: fixed;
@@ -110,27 +110,27 @@
 	}
 
 	.bkg-2 {
-		background-image: url(../optimized-liquidLab-images/optimized-rukenfigur.jpg);
+		background-image: url(../liquidlab_images/optimized-rukenfigur.jpg);
 	}
 
 	.bkg-9 {
-		background-image: url(../optimized-liquidLab-images/optimized-maja-petric.jpg);
+		background-image: url(../liquidlab_images/optimized-maja-petric.jpg);
 	}
 
 	.bkg-11 {
-		background-image: url(../optimized-liquidLab-images/optimized-todd-quackenbush-reverse.jpg);
+		background-image: url(../liquidlab_images/optimized-todd-quackenbush-reverse.jpg);
 	}
 
 	.bkg-12 {
-		background-image: url(../optimized-liquidLab-images/optimized-apples.jpg);
+		background-image: url(../liquidlab_images/optimized-apples.jpg);
 	}
 
 	.bkg-14 {
-		background-image: url(../optimized-liquidLab-images/optimized-farmer.jpg);
+		background-image: url(../liquidlab_images/optimized-farmer.jpg);
 	}
 
 	.bkg-16 {
-		background-image: url(../optimized-liquidLab-images/rukenfigur-pattern-4.png);
+		background-image: url(../liquidlab_images/rukenfigur-pattern-4.png);
 		background-repeat: no-repeat;
 		background-size: cover;
 		opacity: .2;
@@ -138,7 +138,7 @@
 	}
 
 	.bkg-20 {
-		background-image: url(../optimized-liquidLab-images/mega-tile-v3-03.png);
+		background-image: url(../liquidlab_images/mega-tile-v3-03.png);
 		background-repeat: repeat;
 		background-attachment: scroll;
 		background-size: 80px;

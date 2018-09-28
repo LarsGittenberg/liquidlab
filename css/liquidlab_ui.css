@@ -192,7 +192,7 @@ button.commerce p {
 	.pg-down {
 		width: 35px;
 		height: 50px;
-		background-image: url(../optimized-liquidLab-images/page-arrow-down.svg);
+		background-image: url(../liquidlab_images/page-arrow-down.svg);
 		background-size: cover;
 		position: fixed;
 		bottom:  50%;
@@ -206,14 +206,14 @@ button.commerce p {
 }
 
 	.pg-down:hover {
-		background-image: url(../optimized-liquidLab-images/page-arrow-down.svg);
+		background-image: url(../liquidlab_images/page-arrow-down.svg);
 		bottom:  49.5%;
 	}
 
 	.pg-up {
 		width: 35px;
 		height: 50px;
-		background-image: url(../optimized-liquidLab-images/page-arrow-down.svg);
+		background-image: url(../liquidlab_images/page-arrow-down.svg);
 		background-size: cover;position: fixed;
 		top: 50%;
 		transform:  translateY(-125%) translateX(10%) rotate(180deg);
@@ -226,7 +226,7 @@ button.commerce p {
 	}
 
 	.pg-up:hover {
-		background-image: url(../optimized-liquidLab-images/page-arrow-down.svg);
+		background-image: url(../liquidlab_images/page-arrow-down.svg);
 		top:  49.5%;
 		transform:  translateY(-125%) translateX(10%) rotate(180deg);
 	}
